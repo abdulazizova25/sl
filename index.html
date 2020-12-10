@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+            }
+            </style>
+
+     <table >
+         <caption>HTML table example</caption>
+         <tr>
+             <th colspan="2">Student Name</th>
+             <th colspan="3">Labs</th>
+             <th rowspan="2">Avg</th>
+
+         </tr>
+
+         <tr>
+             <th>First</th>
+             <th>Last</th>
+             <th>Lab1</th>
+             <th>Lab2</th>
+             <th>Lab3</th>
+         </tr>
+
+         <tr>
+             <td>Sol</td>
+             <td>Rosenberg</td>
+             <td>100</td>
+             <td>100</td>
+             <td>100</td>
+             <td>100.0</td>
+         </tr>
+
+         <tr>
+            <td>Frank</td>
+            <td>Rizzo</td>
+            <td>50</td>
+            <td>60</td>
+            <td>90</td>
+            <td>66.6</td>
+        </tr>
+
+        <tr>
+            <td>Ali</td>
+            <td>Kam</td>
+            <td>90</td>
+            <td>80</td>
+            <td>60</td>
+            <td>76.6</td>
+        </tr>
+
+        <tr>
+            <th rowspan="2">Summary</th>
+            <th>Avg</th>
+            <td>80.0</td>
+            <td>80.0</td>
+            <td>83.3</td>
+            <td>81.1</td>
+        </tr>
+
+        <tr>
+            <th>Min</th>
+            <td>50</td>
+            <td>60</td>
+            <td>60</td>
+            <td>66.6</td>
+        </tr>
+     </table>
+     <br>
+     <table>
+         <tr>
+             <th rowspan="3">Day</th>
+             <th colspan="3">Seminar</th>
+         </tr>
+         <tr>
+             <th colspan="2">Schedule</th>
+             <th rowspan="2">Topic</th>
+         </tr>
+         <tr>
+             <th>Begin</th>
+             <th>End</th>
+         </tr>
+         <tr>
+             <td rowspan="2">Monday</td>
+             <td rowspan="2">8:00 a.m</td>
+             <td rowspan="2">5:00 p.m</td>
+             <td>Introduction to XML</td>
+         </tr>
+         <tr>
+             <td>Validity:DTD and Relax NG</td>
+         </tr>
+         <tr>
+             <td rowspan="4">Tuesday</td>
+             <td>8:00 a.m</td>
+             <td>11:00 a.m</td>
+             <td rowspan="2">XPath</td>
+         </tr>
+         
+         <tr>
+            <td rowspan="2">11:00 a.m</td>
+             <td rowspan="2">2:00 p.m</td> 
+         </tr>
+         <tr>
+            <td rowspan="2">XSL Transformations</td>
+         </tr>
+         <tr>
+            <td>2:00 p.m</td>
+            <td>5:00 p.m</td>
+            
+         </tr>
+         <tr>
+             <td>Wednesday</td>
+             <td>8:00 a.m</td>
+             <td>12:00 p.m</td>
+             <td>XSL Formatting Objects</td>
+         </tr>
+     </table>
+
+     <h1>Travel reservation form</h1>
+     <h3>*denotes mandotory</h3>
+         <br>
+             
+         <form action="" method="POST">
+            <label for="name"><b>Full name*:</b></label><br>
+            <input type="text" name="" id="name" required="required" placeholder="FirstName LastName">
+  <br>
+
+            <label for="email"><b>Email address*:</b></label><br>
+            <input type="email" name="" id="email" required="required" placeholder="EMAIL_ADDRESS">
+<br> 
+            <label for="Tour"><b>Select Tour Package*:</b></label><br>
+            <select name="select" id="Tour" >
+                   <option >Goa</option>
+                   <option >Bali</option>
+                   <option >Paris</option>
+           </select><br>
+           <label for="date"><b>Arrival date*:</b></label><br>
+           <input type="number" id="date" required="required" placeholder="m/d/y">
+           <br>
+           <label for="number"><b>Number of persons*:</b></label><br>
+           <input type="number" id="number" required="required" placeholder="UNKNOWN_TYPE">
+           <br>
+           <p><b>What would you want to avail?*</b></p>
+           <label for="checkbox"></label>Boarding</label>
+           <input type="checkbox" id="checkbox" >
+    <br>
+           <label for="checkbox"></label>Fooding</label>
+           <input type="checkbox" id="checkbox">
+    <br>
+           <label for="checkbox"></label>Sight seeing</label>
+           <input type="checkbox" id="checkbox">
+    <br>
+            <label for="code"><b>Discout Coupon code:</b></label><BR>
+            <input type="password" id="code" required="required" placeholder="UNKNOWN_TYPE">
+    <br>
+    <p><b>Terms and conditions*</b></p><br>
+           
+           <input type="radio" name="agree"   id="radio">
+           <label for="radio"></label>I agree</label>
+
+           <input type="radio" name="agree"  id="radio">
+           <label for="radio"></label>I disagree</label>
+    
+           <br> <button type="submit">Complete reservation</button>
+        </form>
+           <br>
+           <br>
+           <form action="" method="POST">
+          
+            <fieldset>
+                   <legend>Customer Details</legend>
+                       <label for="customer">Customer</label>
+                       <input type="">
+                       <br><br>
+                       <label for="phone">Phone No    </label>
+                       <input type="number" id="phone" required="required" >
+                       <br><br>
+                       <label for="email">Customer Email   </label>
+                       <input type="email" id="email">
+                </fieldset>
+                <Fieldset>
+                    <legend>Trip Dates</legend>
+                    <label for="date">Arrival Date</label>
+                    <input type="datetime-local" name="" id="date">
+                    <br>
+                    <label for="days"> No Of Days</label>
+                    <input type="number" name="" id="days">
+                    <br>
+                    <label for="night">No of Nights</label>
+                    <input type="number" name="" id="night">
+                    <br>
+                    <label for="dates">Departure Date</label>
+                    <input type="date" name="" id="dates">
+                </Fieldset> 
+                <fieldset>
+                    <legend>Group</legend>
+                    <label for="Adult"> No of Adults</label>
+                    <input type="number" id="Adult">
+                    <br>
+                    <label for="kids">No of Kids</label>
+                    <input type="number" id="kids">
+                </fieldset>
+                <fieldset>
+                    <legend></legend>
+                </fieldset>
+           
+
+
+    </body>
+</html>
